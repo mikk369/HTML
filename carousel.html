@@ -12,16 +12,40 @@
   </head>
   <body>
     <div class="carousel">
-      <img src="./img/image.jpg" alt="image" />
-      <blockquote class="testimonial-text">
+      <img class="image" src="./img/image.jpg" alt="image" />
+      <blockquote class="testimonial">
         <p class="testimonial-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, natus
-          perferendis. Harum inventore et quo.
+          perferendis. Harum inventore et quo. #1
         </p>
         <p class="testimonial-author">Author name</p>
         <p class="testimonial-job">Junior developer</p>
       </blockquote>
-      <button class="btn btn-left">
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, natus
+          perferendis. Harum inventore et quo. #2
+        </p>
+        <p class="testimonial-author">Author name</p>
+        <p class="testimonial-job">Junior developer</p>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, natus
+          perferendis. Harum inventore et quo. #3
+        </p>
+        <p class="testimonial-author">Author name</p>
+        <p class="testimonial-job">Junior developer</p>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, natus
+          perferendis. Harum inventore et quo. #4
+        </p>
+        <p class="testimonial-author">Author name</p>
+        <p class="testimonial-job">Junior developer</p>
+      </blockquote>
+      <button id="left" class="btn btn-left" data-carousel-button="left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -37,7 +61,7 @@
           />
         </svg>
       </button>
-      <button class="btn btn-right">
+      <button id="right" class="btn btn-right" data-carousel-button="right">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -99,13 +123,19 @@
     gap: 86px;
     position: relative;
   }
+
   img {
     height: 200px;
     border-radius: 9px;
     transform: scale(1.5);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 30%);
   }
-
+  .testimonial {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
   .testimonial-text {
     font-size: 18px;
     font-weight: 500;
