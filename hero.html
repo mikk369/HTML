@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>foodApp Hero section</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">Logo</div>
+        <div class="navigation">Navigation</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>
+            Experience culinary bliss with our delectable recipes, served fresh
+            daily.
+          </h1>
+          <p>
+            Discover new restaurants, browse menus, and book reservations with
+            ease using our restaurant app.
+          </p>
+          <a href="#" class="button">Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Discover New Restaurants.</h2>
+        <p>
+          Finding new restaurants can be a daunting task, but with our app, it's
+          never been easier. Browse through hundreds of restaurants in your area
+          and discover new flavors and cuisines. Our app provides you with
+          detailed information about each restaurant, including menus, reviews,
+          and ratings from other users.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Rubik", sans-serif;
+    color: #444;
+  }
+  .container {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  header {
+    height: 100vh;
+    position: relative;
+    /* one background on another  */
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(./img/hero2.jpg);
+    background-size: cover;
+    color: #fff;
+  }
+  nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+  }
+  .header-container {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* seab objekti enda keskele parent ele. suhtes */
+    transform: translate(-50%, -50%);
+  }
+  .header-container-inner {
+    width: 50%;
+  }
+  h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+    line-height: 1.05;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+  }
+  .button:link,
+  .button:visited {
+    font-weight: 600;
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+  }
+  .button:hover {
+    background-color: #d16e18;
+  }
+  h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+  }
+  section {
+    padding: 96px 0;
+    background-color: #f7f7f7;
+  }
+</style>
